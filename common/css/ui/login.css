@@ -1,0 +1,211 @@
+@charset "UTF-8";
+
+
+/*login - start*/
+.loginAllWrap{
+  display: block;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url(../../images/loginbg.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.loginAll{
+  display: block;
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+}
+
+.loginAll .loginImg{
+  display: block;
+  width: 280px;
+  height: 66px;
+  background: url(../../images/logo2.png) center no-repeat;
+  background-size: 280px 66px;
+  margin:0 auto;
+}
+
+.loginTxt1{
+  display: block;
+  text-align: right;
+  color:#fff !important;
+  padding:0 60px 0 0;
+  font-size:16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.loginTxt1 .t2{font-size: 14px;}
+
+.loginTxt2{
+  display: block;
+  width: 100%;
+  text-align: center;
+  color:#fff !important;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin:18px 0 0;
+}
+
+.loginBox{
+  display: block;
+  width: 100%;
+  border-radius: 25px;
+  background: #FFF;
+  padding:46px 67px;
+  margin:26px 0 0;
+}
+
+.loginBox > .title{
+  display: block;
+  width: 100%;
+  color: #222;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 34px;
+  text-align: left;
+  margin:0 0 40px;
+}
+
+.loginInputWrap{
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.loginInputWrap + .loginInputWrap{margin:30px 0 0;}
+
+.loginInputWrap .buttonEye{
+  top:7px !important;
+}
+
+
+.inputUnderLine{
+  display: block;
+  width: 100%;
+  border: none;
+  height: 42px;
+  line-height: 42px;
+  border-bottom:1px solid #d9d9d9;
+  border-radius: 0 !important;
+  color:#222;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+  padding : 8px 
+}
+
+.inputUnderLine::placeholder{color:#777}
+
+.inputUnderLine:focus{
+  outline: none !important;
+  border-bottom:1px solid var(--main);
+}
+
+/*.inputUnderLine + .inputUnderLine{margin:30px 0 0;}*/
+
+.loginBox .errorMessage{
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin:30px 0 0;
+  color: #ff2929/*3455FF*/;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+
+.loginBox .buttonSignIn{
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+  background: #3455FF;
+  height: 50px;
+  line-height: 50px;
+  color:#fff !important;
+  font-size: 16px;
+  font-weight: 700; 
+  margin:30px 0 0;
+}
+
+.loginBox .buttonSignIn:focus{
+  outline:1px solid #000 !important;
+}
+
+.loginBox .forgotPw{
+  display: block;
+  float: left;
+  color: #777 !important;
+  font-size: 12px;
+  text-align: left;
+  font-weight: 500;
+  text-decoration-line: underline !important;
+  margin:30px 0 0;
+}
+
+.loginFooter{
+  display: block;
+  width: 100%;
+  position: fixed;
+  height: 136px;
+  background: #fff;
+  text-align: center;
+  left:0;
+  bottom:0;
+  z-index: 40;
+}
+
+.loginFooter > .txt{
+  color: #222 !important;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  line-height: 136px;
+}
+
+.txtB2{
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 22px;
+  color:#fff !important;
+  margin:20px 0 0;
+}
+
+.goUp{
+  animation-name: goUp;
+  animation-duration:0.7s;
+}
+
+@keyframes goUp {
+  0% {
+    opacity: 0;
+    margin:30px 0 0;
+  }
+  100% {
+    opacity: 1;
+    margin:0;
+  }
+}
+
+@-webkit-keyframes goUp {
+  0% {
+    opacity: 0;
+    margin:30px 0 0;
+  }
+  100% {
+    opacity: 1;
+    margin:0;
+  }
+}
+
+/*login - end*/

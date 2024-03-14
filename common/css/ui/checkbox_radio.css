@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+
+
+/*checkbox : start*/
+.bInput input[type=checkbox]{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: normal;
+}
+
+.bInput {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    float: left;
+    height: 30px;
+}
+
+.bInput.txt15 .txt{font-size:14px !important}
+.bInput.txt15 .txt{font-size:15px !important}
+.bInput.txt15 .txt{font-size:16px !important}
+.bInput.txt15 .txt{font-size:17px !important}
+
+.td > .bInput{margin:4px 0 0;}
+.bInput input + .txt {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    font-weight: 400;
+    color:#555;
+    padding:0 0 0 20px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.bInput input {
+    position: absolute;
+    clip: rect(0,0,0,0);
+    pointer-events: none;
+}
+
+.bInput input[type="checkbox"]:focus+.txt{
+    /*outline:2px solid #20787c; outline-offset: -2px;*/
+}
+.bInput input[type="checkbox"]:not(:checked)+.txt {
+    background: url(../../images/checkbox-off.svg) left no-repeat;
+    background-size: 18px 18px/*20px 20px*/;
+}
+.bInput input[type="checkbox"]:checked+.txt {
+    background: url(../../images/checkbox-on.svg) left no-repeat;
+    background-size: 18px 18px/*20px 20px*/;
+    color: #222;
+}
+
+.bInput input[type="checkbox"]:disabled:not(:checked) +.txt {
+    background: url(../../images/checkbox-dis-h.svg) left no-repeat;
+    background-size: 18px 18px/*20px 20px*/;
+    color: #aaa;
+    cursor: normal;
+}
+.bInput input[type="checkbox"]:disabled:checked +.txt {
+    background: url(../../images/checkbox-dis-on-h3.svg) left no-repeat;
+    background-size: 18px 18px/*20px 20px*/;
+    color: #aaa;
+    cursor: normal;
+}
+
+.bInput input[type="checkbox"][readonly] +.txt {
+    opacity: 0.3;
+}
+
+
+
+
+.bInput input[type=radio]{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: normal;
+}
+
+.bInput input[type=radio] + .txt {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    font-weight: 400;
+    color:#555;
+    padding:0 0 0 24px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.bInput input[type="radio"]:focus+.txt{
+    /*outline:2px solid #20787c; outline-offset: -2px;*/
+}
+.bInput input[type="radio"]:not(:checked)+.txt {
+    background: url(../../images/radio-off.png) left no-repeat;
+    background-size: 18px 18px/*20px 20px*/;
+}
+.bInput input[type="radio"]:checked+.txt {
+    background: url(../../images/radio_on_222.png) left no-repeat;
+    background-size: 18px 18px/*20px 20px*/;
+    color: #222;
+}
+
+.bInput input[type="radio"]:disabled +.txt {
+    background: url(../../images/radio-dis-off.png) left no-repeat;
+    background-size: 18px 18px/*20px 20px*/;
+    color: #aaa;
+}
+
+.bInput + .bInput{margin:0 0 0 20px}
+
+
+
+
+
+
+
+
+
+
+
+.bToggle input[type=checkbox]{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: normal;
+}
+
+.bToggle {
+    position: relative;
+    display: block;
+    width:36px;
+    float: left;
+    height: 22px;
+}
+.bToggle input + .txt {
+    float: left;
+    width: 100%;
+    height: 22px;
+    line-height: 22px;
+    border-radius: 11px;
+    background: #aaa;
+    cursor: pointer;
+}
+
+.bToggle input {
+    position: absolute;
+    clip: rect(0,0,0,0);
+    pointer-events: none;
+}
+
+.bToggle input[type="checkbox"]:focus+.txt{
+    /*outline:2px solid #20787c; outline-offset: -2px;*/
+}
+.bToggle input[type="checkbox"]:not(:checked)+.txt {
+    float: left;
+    width: 100%;
+    height: 22px;
+    line-height:22px;
+    border-radius: 11px;
+    background: #aaa;
+    position: relative;
+}
+
+.bToggle input[type="checkbox"]:not(:checked)+.txt:after{
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  border-radius: 50%;
+  top:3px;
+  right: 3px;
+  background: #fff;
+}
+.bToggle input[type="checkbox"]:checked+.txt {
+    float: left;
+    width: 100%;
+    height: 22px;
+    line-height: 22px;
+    border-radius: 11px;
+    background: var(--main);
+    position: relative;
+}
+
+.bToggle input[type="checkbox"]:checked+.txt:after{
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  border-radius: 50%;
+  top:3px;
+  right: auto;
+  left:3px;
+  background: #fff;
+}
+
+
+/*checkbox : end*/

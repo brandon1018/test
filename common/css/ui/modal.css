@@ -1,0 +1,355 @@
+@charset "UTF-8";
+
+/*modal : start*/
+.modalWrap{
+    display: none;
+}
+.modalWrap.active{
+    display: block;
+}
+
+.modalNormal{
+    display: block;
+    width: 400px;
+    background: #fff;
+    border-radius: 20px;
+    padding:30px;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    z-index: 10000;
+    top:50%;
+    left: 50%;
+    /*animation-name: modalUp;
+    animation-duration:0.7s;*/
+}
+
+.modalNormal.pb0{padding-bottom: 0px !important}
+
+.modalNormal.active{display: block;}
+
+.modalSize1{width:400px}
+.modalSize2{width:600px}
+.modalSize3{width:800px}
+.modalSize4{width:1024px}
+.modalSize5{width:1280px}
+
+.modalInside{
+    display: block;
+    width: 100%;
+    padding:0 50px 0 0;
+    overflow-y: auto;
+    height: calc(100vh - 340px);
+}
+
+.modalInside2{
+    display: block;
+    width: calc(100% + 30px);
+    padding:0 30px 0 0;
+    overflow-y: auto;
+    max-height: calc(100vh - 340px);
+}
+
+
+.dimm{
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    top:0;
+    left:0;
+    z-index: 9000;
+}
+
+.buttonCloseModal{
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top:20px;
+    right: 20px;
+    background: url(../../images/close-26-r-b111.png) center no-repeat;
+    background-size: 18px 18px;
+    opacity: 0.7;
+}
+
+.modalTitleRow{
+    display: block;
+    width: 100%;
+}
+
+.modalTitleRow:after{content: ""; display: block; clear: both;}
+
+.modalTitle{
+    display: block;
+    text-align: left;
+    font-size: 22px;
+    font-weight: 700;
+    color:#222;
+    line-height: 32px;
+    float: left;
+}
+
+.modalTitleTxt2{
+    display: block;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 500;
+    color:#777;
+    line-height: 32px;
+    float: left;
+    margin:0 0 0 20px;
+}
+
+.modalTitleTxt2 > .t1{
+color:#ff2929;
+}
+
+.modalSubTitle{
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    line-height: 21px;
+    color:#555;
+    font-weight: 400;
+    margin:24px 0 0;
+    word-break: break-word;
+}
+
+.modalSubTitle:first-child{margin:0}
+
+.modalSubTitle .s1{
+    font-weight: 700;
+    color:var(--main);
+}
+
+
+.modalSubTopTitle{
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    line-height: 21px;
+    color:#555;
+    font-weight: 400;
+    word-break: break-word;
+    margin:3px 0 0;
+}
+
+
+.modalSubTitle2{
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 13px;
+    line-height: 20px;
+    color:#555;
+    font-weight: 400;
+    margin:40px 0 30px;
+    word-break: break-word;
+}
+
+
+.modalFilterRow{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    background: #F3F4F5;
+    text-align: center;
+    line-height: 0;
+    padding:24px 10px;
+    margin:24px 0 0;
+    border-radius: 10px;
+}
+
+.modalFilterRow:after{content: ""; display: block; clear: both;}
+
+.modalFilterRow .selectNormal{
+    width: 110px;
+    float: left;
+}
+
+.modalFilterRow .category{width:120px;}
+
+.modalFilterRow .category + .category{margin:0 0 0 10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+.modalForm{
+    display: block;
+    width: 100%;
+}
+
+.modalForm:after{content: ""; display: block; clear: both;}
+
+.modalForm .dataWrap:last-child{margin:0 0 24px} 
+
+
+.modalSubTitle + .modalForm{margin:24px 0 0;}
+
+.modalSubTopTitle + .modalForm{margin:24px 0 0;}
+
+.modalSubTitle +.row{margin:20px 0 0;}
+
+.modalForm > .row{margin:26px 0 0;}
+
+.modalForm > .row:first-child{margin:0;}
+
+
+
+
+.modalTitleRow + .modalForm{margin:26px 0 0;}
+
+.dataLabel{
+    display: block;
+    margin:46px 0 0;
+}
+
+.dataLabel:first-child{margin:0;}
+
+.dataLabel:after{content: ""; display: block; clear: both;}
+
+.dataLabel >.txt{
+    display: block;
+    float: left;
+    font-size: 15px;
+    line-height: 23px;
+    color:#555;
+    padding:0 0 4px;
+}
+
+.modalForm .dataWrap{position: relative;}
+
+.modalForm .dataWrap .errorMessage{
+    display: block;
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    font-size: 12px;
+    line-height: 17px;
+    color:#ff2929;
+    margin:6px 0 0;
+    font-weight: 500;
+    word-break: break-word;
+    left:0;
+    top:32px;
+}
+
+.star{
+    display: block;
+    float: left;
+    width:20px;
+    height:22px;
+    background: url(../../images/star001a.png) 3px no-repeat;
+    background-size: 8px 8px;
+    margin:0 0 0 2px;
+    font-size:0;
+}
+
+.dataLabel > .star{
+    display: block;
+    float: left;
+    width:20px;
+    height:22px;
+    background: url(../../images/star001a.png) 3px no-repeat;
+    background-size: 8px 8px;
+    margin:0 0 0 2px;
+}
+
+
+
+.modalButtons{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin:24px 0 0;
+    line-height: 0;
+    /*float: left;*/
+}
+
+.modalButtons .buttonCancel{float: left;}
+
+.modalButtons .buttonDone {
+    display: block;
+    width: 100%;
+    float: left;
+    background: var(--main);
+    height: 40px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 40px;
+    color:#fff !important;
+    font-size: 16px;
+}
+
+.modalButtons .inside{width: 100%}
+
+.modalButtons .button1in2{
+    width: calc(50% - 8px) !important;
+}
+
+.modalButtons .button1in2 + .button1in2{
+    float: right;
+}
+
+
+
+.modalBottomButtons{
+    display: block;
+    width: calc(100% + 60px);
+    transform: translateX(-30px);
+    border-top:1px solid #c0c0c0;
+    padding:20px 30px 0;
+    text-align: center;
+}
+
+.modalBottomButtons:after{content: ""; display: block; clear: both;}
+
+/*.modalTxt1{
+display: block;
+width: 100%;
+text-align: left;
+font-size:20px;
+line-height: 30px;
+font-weight: 700;
+color:#222;
+}
+
+.modalTxt2{
+display: block;
+width: 100%;
+text-align: left;
+font-size:16px;
+line-height: 25px;
+font-weight: 500;
+color:#555;
+word-break: break-word;
+}
+
+.modalTxt1 + .modalTxt2{margin:10px 0 0;}
+
+.modalTxt3{
+display: block;
+width: 100%;
+text-align: left;
+font-size: 14px;
+line-height: 21px;
+color: #555;
+font-weight: 400;
+word-break: break-word;
+margin:10px 0 20px;
+}*/
+/*modal : end */
+
+
+

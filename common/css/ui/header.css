@@ -1,0 +1,186 @@
+/*header : start*/
+header{
+    display: block;
+    position: fixed;
+    z-index: 80;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: #FFF;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+    padding:0 30px;
+}
+
+header:after{content: ""; display: block; clear: both;}
+
+header > .logo{
+    display: block;
+    float: left;
+    line-height: 0;
+    width: 130px;
+    margin:14px 0 0;
+}
+
+header > .logo > img{
+    display: block;
+    width: 100%;
+}
+
+header nav{
+    display: block;
+    float: left;
+    margin:15px 0 0 51px;
+}
+
+header nav:after{content: ""; display: block; clear: both;}
+
+header nav .navMenu{
+    display: block;
+    float: left;
+    text-align: center;
+    color: #8896BC !important;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+header nav .navMenu.active{
+    color: var(--main) !important;
+    font-weight: 700;
+    border-bottom:4px solid var(--main);
+}
+
+header nav .navMenu + .navMenu{margin:0 0 0 24px;}
+
+header .cash{
+    display: block;
+    float: left;
+    margin:20px 0 0;
+}
+
+header .cash:after{content: ""; display: block; clear: both;}
+
+header .cash .txt1{
+    display: block;
+    float: left;
+    text-align: left;
+    color: #222 !important;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+header .cash .amount{
+    display: block;
+    float: left;
+    text-align: left;
+    color: var(--sub) !important;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    margin:0 0 0 15px;
+}
+
+header .cash .txt2{
+    display: block;
+    float: left;
+    text-align: left;
+    color: #222 !important;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 0 0 0 4px;
+}
+
+header .cash .buttonApply{
+    display: block;
+    float: left;
+    color: #FFF !important;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    height: 30px;
+    padding:0 10px;
+    background: var(--sub);
+    margin:0 0 0 20px;
+    border-radius: 4px;
+}
+
+header .userButtons{
+    display: block;
+    float: left;
+    position: relative;
+    margin:20px 0 0 50px;
+    border-radius: 4px;
+}
+
+header .userButtons:after{content: ""; display: block; clear: both;}
+
+header .userButtons:before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    background: #D9D9D9;
+    top:5px;
+    left: -25px;
+}
+
+header .userButtons .buttonUserInfo{
+    display: block;
+    float: left;
+    height: 30px;
+    text-align: center;
+    padding:0 8px;
+    border:1px solid #c0c0c0;
+    border-radius: 4px;
+}
+
+header .userButtons .buttonUserInfo span{
+    display: inline-block;
+    line-height: 28px;
+    height: 28px;
+    text-align: left;
+    padding:0 0 0 16px;
+    color:#222 !important;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    background: url(../../images/user1.svg) left no-repeat;
+    background-size: 10px 12px;
+}
+
+header .userButtons .buttonLogout{
+    display: block;
+    float: left;
+    height: 30px;
+    text-align: center;
+    padding:0 8px;
+    border:1px solid #c0c0c0;
+    border-radius: 4px;
+}
+
+header .userButtons .buttonLogout span{
+    display: inline-block;
+    line-height: 28px;
+    height: 28px;
+    text-align: left;
+    padding:0 0 0 16px;
+    color:#222 !important;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    background: url(../../images/loggout.svg) left 8px no-repeat;
+    background-size: 13px 11px;
+}
+
+header .userButtons .buttonUserInfo + .buttonLogout{margin:0 0 0 10px;}
+/*header : end*/
+
